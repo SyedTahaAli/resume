@@ -1,0 +1,22 @@
+profile (java):
+
+
+
+package com.example.tahaa.login_app;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class Profile extends AppCompatActivity {
+
+    private TextView tvEmail;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_profile);
+
+        tvEmail = (TextView) findViewById(R.id.txtEmailProfile);
+        tvEmail.setText(getIntent().getExtras().getString("Email"));
+    }
+}
