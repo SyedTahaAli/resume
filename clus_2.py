@@ -1,4 +1,65 @@
-------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------Guess Numer--------------------------------------------------------------
+#== == == == == == == == == == == == == == == == == == == == == NAMEPRINTAND
+#CONCATINATE == == == == == == == == == == == == == == == == == =
+'''for x in range(6):
+
+    print("taha")
+
+    fruits = ["apple", "banana", "cherry"]
+    for x in fruits:
+        print(x)
+
+        thisdict = {
+            "apple": "green",
+            "banana": "yellow",
+            "cherry": "red"
+        }
+        print(thisdict)
+'''
+#= == == == == == == RANDOM NUM GAME(WITHOUt LIMIT) == == == == == == == == =
+'''
+import random
+
+n1 = random.randrange(1, 10)
+while True:
+    print('Guess a number between 1 and 10')
+    guess = input()
+    i = int(guess)
+    if i == n1:
+        print('You won!!!')
+        break
+    elif i < n1:
+        print('Guess Larger')
+    elif i > n1:
+        print('Guess Smallest')
+'''
+#== == = == == == == == =WITH LIMIT == ==== == == == == =
+import random
+
+n1 = random.randrange(1, 10)
+
+for value in range(5):
+    print('Guess a number between 1 To 10')
+    guess = input()
+    i = int(guess)
+    if i == n1:
+        print('You won!!!')
+        break
+    elif i < n1:
+        print('Guess Larger')
+
+    elif i > n1:
+        print('Guess Smaller')
+
+    elif i != n1:
+
+        print('You Lost')
+
+else:
+    print('You Lost')
+
+
+
 
 ------------------------------------------------------------------Steeming------------------------------------------------------------
 import nltk
